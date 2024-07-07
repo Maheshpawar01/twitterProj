@@ -1,5 +1,11 @@
-export const USER_API_END_POINT = "http://localhost:8080/api/v1/user";
-export const TWEET_API_END_POINT = "http://localhost:8080/api/v1/tweet";
+// Define API endpoints using environment variables
+const backendUrl ="https://twitterproj-backend.onrender.com";
+
+export const USER_API_END_POINT = `${backendUrl}/api/v1/user`;
+export const TWEET_API_END_POINT = `${backendUrl}/api/v1/tweet`;
+
+// export const USER_API_END_POINT = "http://localhost:8080/api/v1/user";
+// export const TWEET_API_END_POINT = "http://localhost:8080/api/v1/tweet";
 
 export const timeSince = (timestamp) => {
   let time = Date.parse(timestamp);
