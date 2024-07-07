@@ -81,7 +81,7 @@ const Login = () => {
               </>)
             }
             <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Email' className='outline-blue-500 border border-gray-500 rounded-full px-3 py-2 my-1 font-semibold'/>
-            <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password' className='outline-blue-500 border border-gray-500 rounded-full px-3 py-2 my-1 font-semibold'/>
+            <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password' className='outline-blue-500 border border-gray-500 rounded-full px-3 py-2 my-1 font-semibold' autocomplete="current-password/>
             <button className='bg-[#1D9BF0] border-none my-4 py-2 rounded-full tex-lg text-white'>{islogin ? "Login" : "Creat Account"}</button>
             <h1>{islogin ? "Do not have an account?" : "Already have an account?"} <span onClick={loginSignupHandler} className='font-bold text-blue-500 cursor-pointer'>{islogin ? "SignUp" : "login"}</span></h1>
           </form>
